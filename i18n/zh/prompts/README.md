@@ -1,6 +1,6 @@
 # 💡 AI 提示词库 (Prompts)
 
-`prompts/` 存放本仓库的提示词资产：用 **系统提示词** 约束 AI 的边界与品味，用 **任务提示词** 驱动「需求澄清 → 计划 → 执行 → 复盘」的开发流水线。
+`i18n/zh/prompts/` 存放本仓库的提示词资产：用 **系统提示词** 约束 AI 的边界与品味，用 **任务提示词** 驱动「需求澄清 → 计划 → 执行 → 复盘」的开发流水线。
 
 ## 推荐使用路径（从 0 到可控）
 
@@ -11,7 +11,7 @@
 ## 目录结构（以仓库真实目录为准）
 
 ```
-prompts/
+i18n/zh/prompts/
 ├── README.md
 ├── coding_prompts/                 # 编程/研发提示词（当前 41 个 .md）
 │   ├── index.md                    # 自动生成的索引与版本矩阵（请勿手改）
@@ -37,7 +37,7 @@ prompts/
 
 系统提示词用于定义 **工作模式、代码品味、输出格式、安全边界**。目录采用版本化结构：
 
-- 路径约定：`prompts/system_prompts/CLAUDE.md/<版本号>/CLAUDE.md`
+- 路径约定：`i18n/zh/prompts/system_prompts/CLAUDE.md/<版本号>/CLAUDE.md`
 - 推荐版本：
   - `v8`：综合版，适合通用 Vibe Coding
   - `v10`：偏 Augment/上下文引擎的规范化约束
@@ -66,15 +66,15 @@ prompts/
 
 ```bash
 # 查看一个任务提示词
-sed -n '1,160p' prompts/coding_prompts/标准化流程.md
+sed -n '1,160p' i18n/zh/prompts/coding_prompts/标准化流程.md
 
 # 选定系统提示词版本（建议先备份你当前的 CLAUDE.md）
-cp prompts/system_prompts/CLAUDE.md/10/CLAUDE.md ./CLAUDE.md
+cp i18n/zh/prompts/system_prompts/CLAUDE.md/10/CLAUDE.md ./CLAUDE.md
 ```
 
 ## 维护与批量管理（可选）
 
-如果你需要 Excel ↔ Markdown 的批量维护能力，仓库内置了第三方工具：`libs/external/prompts-library/`。建议把它视为“提示词资产的生产工具”，而把 `prompts/` 视为“日常开发的精选集”。
+如果你需要 Excel ↔ Markdown 的批量维护能力，仓库内置了第三方工具：`libs/external/prompts-library/`。建议把它视为“提示词资产的生产工具”，而把 `i18n/zh/prompts/` 视为“日常开发的精选集”。
 
 ## 相关资源
 

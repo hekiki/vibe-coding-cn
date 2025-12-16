@@ -1,11 +1,11 @@
 # 📖 文档库 (Documents)
 
-`documents/` 目录汇总项目的流程文档、架构说明、开发经验与最佳实践，是理解方法论与协作规则的首选入口。
+`i18n/zh/documents/` 目录汇总项目的流程文档、架构说明、开发经验与最佳实践，是理解方法论与协作规则的首选入口。
 
 ## 目录结构
 
 ```
-documents/
+i18n/zh/documents/
 ├── README.md
 │
 ├── Methodology and Principles/

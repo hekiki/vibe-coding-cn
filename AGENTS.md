@@ -12,7 +12,7 @@
 - `make help`：列出所有 Make 目标，是新人快速上手的入口。
 - `make lint`：使用 `markdownlint-cli` 校验全仓库 Markdown，一旦新增文档请先跑通（需本地 Node/npm 环境，可用 `npm install -g markdownlint-cli` 安装）。
 - `make build` / `make test` / `make clean`：目前为占位，落地具体实现后务必更新脚本和说明；建议在 `Makefile` 旁补充注释并保持幂等，避免修改全局状态。
-- 提示词转换：进入 `i18n/zh/prompts/prompts-library/` 后执行 `python main.py` 按交互提示进行转换，运行前请确认虚拟环境、依赖与输出目录，并在完成后检查生成 Markdown 是否符合 lint 规则。
+- 提示词转换：进入 `libs/external/prompts-library/` 后执行 `python main.py` 按交互提示进行转换，运行前请确认虚拟环境、依赖与输出目录，并在完成后检查生成 Markdown 是否符合 lint 规则。
 
 ## Coding Style & Naming Conventions
 - 文字层：文档、注释、日志使用中文；代码符号（函数 / 变量 / 模块）统一英文且语义直白，避免晦涩缩写。
@@ -35,7 +35,7 @@
 - 外部依赖来源记录在 `libs/external/` 目录下，增减依赖时同步维护，保持可追溯；引入第三方脚本需标明许可证与来源。
 
 ## Architecture Overview & Workflow
-- 工作流倡导「规划 → 上下文固定 → 分步实现 → 自测 → 复盘」，对应资产分别存放在 `i18n/zh/documents/`、`i18n/zh/i18n/zh/prompts/`、`libs/` 与备份脚本中。保持单向数据流和清晰责任边界可以避免后期维护成本激增。
+- 工作流倡导「规划 → 上下文固定 → 分步实现 → 自测 → 复盘」，对应资产分别存放在 `i18n/zh/documents/`、`i18n/zh/prompts/`、`libs/` 与备份脚本中。保持单向数据流和清晰责任边界可以避免后期维护成本激增。
 - 设计决策与目录结构更新后，请同步修订本文件与相关文档，确保团队共享同一真相源，减少口头约定与隐式规则。
 
 ---
@@ -72,7 +72,7 @@ bash backups/一键备份.sh
 
 ### Core Directories
 - **`i18n/zh/prompts/`**: The core asset. A massive, well-organized library of prompts.
-  - `coding_i18n/zh/prompts/`, `system_i18n/zh/prompts/`, `user_i18n/zh/prompts/`
+  - `coding_prompts/`, `system_prompts/`, `user_prompts/`, `meta_prompts/`
 - **`i18n/zh/skills/`**: A modular library of skills for the AI, providing domain-specific knowledge for various tools like `ccxt`, `postgresql`, `telegram-dev`, 
 etc.
 - **`i18n/zh/documents/`**: The project's knowledge base, containing methodology, principles, and guides.
@@ -121,9 +121,10 @@ When modifying this repository:
 
 1.  **AI 提示词库 (`i18n/zh/prompts/`):**
     *   一个极其庞大和精细分类的提示词集合，是项目的核心资产。
-    *   `coding_i18n/zh/prompts/`: 专注于编程和代码生成的提示词。
-    *   `system_i18n/zh/prompts/`: 用于设定 AI 行为和思维框架的系统级提示词。
-    *   `user_i18n/zh/prompts/`: 用户自定义或常用的提示词。
+    *   `coding_prompts/`: 专注于编程和代码生成的提示词。
+    *   `system_prompts/`: 用于设定 AI 行为和思维框架的系统级提示词。
+    *   `user_prompts/`: 用户自定义或常用的提示词。
+    *   `meta_prompts/`: 元提示词与提示工程辅助。
 
 2.  **提示词库管理工具 (`libs/external/prompts-library/`):**
     *   提供 Python 工具 (`main.py`)，用于在 Excel 工作簿 (`prompt_excel/`) 和 Markdown 文档 (`prompt_docs/`) 之间进行提示词的相互转换。
@@ -179,9 +180,10 @@ When modifying this repository:
 │       └── XHS-image-to-PDF-conversion/ # 小红书图片转 PDF 工具。
 │
 ├── i18n/zh/prompts/                     # 核心资产：AI 提示词库。
-│   ├── coding_i18n/zh/prompts/          # 编程与代码生成相关提示词。
-│   ├── system_i18n/zh/prompts/          # AI 系统级提示词。
-│   └── user_i18n/zh/prompts/            # 用户自定义提示词。
+│   ├── coding_prompts/                  # 编程与代码生成相关提示词。
+│   ├── system_prompts/                  # AI 系统级提示词（含 CLAUDE 版本目录）。
+│   ├── user_prompts/                    # 用户自定义提示词。
+│   └── meta_prompts/                    # 元提示词与提示工程辅助。
 │
 └── i18n/zh/skills/                      # 模块化技能库。
     ├── ccxt/                    # CCXT 加密货币交易库技能。

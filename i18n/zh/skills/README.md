@@ -1,11 +1,11 @@
 # 🎯 AI Skills 技能库
 
-`skills/` 目录存放 AI 技能（Skills），这些是比提示词更高级的能力封装，可以让 AI 在特定领域表现出专家级水平。当前包含 **14 个**专业技能。
+`i18n/zh/skills/` 目录存放 AI 技能（Skills），这些是比提示词更高级的能力封装，可以让 AI 在特定领域表现出专家级水平。当前包含 **14 个**专业技能。
 
 ## 目录结构
 
 ```
-skills/
+i18n/zh/skills/
 ├── README.md                # 本文件
 │
 ├── # === 元技能（核心） ===
@@ -118,23 +118,23 @@ skill-name/
 
 ```bash
 # 查看元技能
-cat skills/claude-skills/SKILL.md
+cat i18n/zh/skills/claude-skills/SKILL.md
 
 # 查看 PostgreSQL 技能（最详细）
-cat skills/postgresql/SKILL.md
+cat i18n/zh/skills/postgresql/SKILL.md
 
 # 查看 Telegram Bot 开发技能
-cat skills/telegram-dev/SKILL.md
+cat i18n/zh/skills/telegram-dev/SKILL.md
 ```
 
 ### 2. 复制到项目中使用
 
 ```bash
 # 复制整个技能目录
-cp -r skills/postgresql/ ./my-project/
+cp -r i18n/zh/skills/postgresql/ ./my-project/
 
 # 或只复制主文件到 CLAUDE.md
-cp skills/postgresql/SKILL.md ./CLAUDE.md
+cp i18n/zh/skills/postgresql/SKILL.md ./CLAUDE.md
 ```
 
 ### 3. 结合 Claude Code 使用
@@ -145,8 +145,8 @@ cp skills/postgresql/SKILL.md ./CLAUDE.md
 # 项目规则
 
 请参考以下技能文件：
-@skills/postgresql/SKILL.md
-@skills/telegram-dev/SKILL.md
+@i18n/zh/skills/postgresql/SKILL.md
+@i18n/zh/skills/telegram-dev/SKILL.md
 ```
 
 ## 创建自定义 Skill
@@ -154,12 +154,12 @@ cp skills/postgresql/SKILL.md ./CLAUDE.md
 ### 方法一：使用元技能生成（推荐）
 
 1. 准备领域资料（文档、代码、规范）
-2. 将资料和 `skills/claude-skills/SKILL.md` 一起提供给 AI
+2. 将资料和 `i18n/zh/skills/claude-skills/SKILL.md` 一起提供给 AI
 3. AI 会生成针对该领域的专用 Skill
 
 ```bash
 # 示例：让 AI 读取元技能后生成新技能
-cat skills/claude-skills/SKILL.md
+cat i18n/zh/skills/claude-skills/SKILL.md
 # 然后告诉 AI：请根据这个元技能，为 [你的领域] 生成一个新的 SKILL.md
 ```
 
@@ -167,10 +167,10 @@ cat skills/claude-skills/SKILL.md
 
 ```bash
 # 创建技能目录
-mkdir -p skills/my-skill/{assets,scripts,references}
+mkdir -p i18n/zh/skills/my-skill/{assets,scripts,references}
 
 # 创建主文件
-cat > skills/my-skill/SKILL.md << 'EOF'
+cat > i18n/zh/skills/my-skill/SKILL.md << 'EOF'
 # My Skill
 
 ## 概述
