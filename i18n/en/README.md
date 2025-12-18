@@ -57,11 +57,24 @@
   <a href="./i18n/vi/"><img src="https://img.shields.io/badge/lang-vi-darkgreen?style=for-the-badge" alt="Tiếng Việt"></a>
 </p>
 
-[📚 Related Documents](#-related-documents-and-resources)
-[🚀 Getting Started](#-getting-started)
-[⚙️ Full Setup Process](#️-full-setup-process)
-[📞 Contact Information](#-contact-information)
-[✨ Support Project](#-support-project)
+<!-- Resource Quick Links -->
+<p>
+  <a href="./prompts/"><img src="https://img.shields.io/badge/Prompts-Curated-purple?style=for-the-badge" alt="Curated Prompts"></a>
+  <a href="./skills/"><img src="https://img.shields.io/badge/Skills-Collection-forestgreen?style=for-the-badge" alt="Skills Collection"></a>
+  <a href="../../libs/external/prompts-library/prompt_docs/"><img src="https://img.shields.io/badge/Prompts-Library-orange?style=for-the-badge" alt="Prompts Library"></a>
+  <a href="https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1"><img src="https://img.shields.io/badge/Prompts-Online_Sheet_(Recommended)-blue?style=for-the-badge" alt="Online Prompt Sheet"></a>
+  <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"><img src="https://img.shields.io/badge/System_Prompts-Repo-slateblue?style=for-the-badge" alt="System Prompts Repo"></a>
+  <a href="./documents/01-getting-started/README.md"><img src="https://img.shields.io/badge/🚀_Getting_Started-Beginners-red?style=for-the-badge" alt="Getting Started"></a>
+  <a href="./documents/03-practice/README.md"><img src="https://img.shields.io/badge/🎬_Practice-Projects-orange?style=for-the-badge" alt="Practice Projects"></a>
+  <a href="./documents/00-fundamentals/Common%20Pitfalls.md"><img src="https://img.shields.io/badge/🕳️_Common_Pitfalls-Guide-yellow?style=for-the-badge" alt="Common Pitfalls"></a>
+  <a href="./documents/04-resources/External%20Resource%20Aggregation.md"><img src="https://img.shields.io/badge/📡_Resources-Aggregation-teal?style=for-the-badge" alt="Resource Aggregation"></a>
+  <a href="../../libs/external/chat-vault/README.md"><img src="https://img.shields.io/badge/🔐_Chat_Vault-AI_Session_DB-gold?style=for-the-badge" alt="Chat Vault"></a>
+</p>
+
+[📋 Tools & Resources](#-the-tools-qi)
+[⚙️ Full Setup](#️-full-setup-process)
+[📞 Contact](#-contact-information)
+[✨ Support](#-support-project)
 [🤝 Contributing](#-contributing)
 
 AI interpretation link for this repository: [zread.ai/tukuaiai/vibe-coding-cn](https://zread.ai/tukuaiai/vibe-coding-cn/1-overview)
