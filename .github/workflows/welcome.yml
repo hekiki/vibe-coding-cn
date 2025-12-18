@@ -1,0 +1,42 @@
+name: Welcome New Contributors
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            👋 感谢您提交第一个 Issue！
+
+            我们非常重视您的反馈。请确保：
+            - 已阅读 [贡献指南](CONTRIBUTING.md)
+            - 提供了足够的上下文信息
+            - 如果是 Bug，请提供复现步骤
+
+            我们会尽快回复您！🚀
+
+            ---
+            Thanks for opening your first issue! We'll get back to you soon.
+          pr-message: |
+            🎉 感谢您提交第一个 Pull Request！
+
+            这是您对本项目的首次贡献，我们非常感激！请确保：
+            - PR 描述清晰说明了改动内容
+            - 代码符合项目规范
+            - 已更新相关文档（如适用）
+
+            我们会尽快审核您的代码！💪
+
+            ---
+            Thanks for your first PR! We'll review it soon.

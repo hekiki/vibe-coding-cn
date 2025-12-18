@@ -1,0 +1,45 @@
+# 文档相关
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - 'docs/**'
+          - 'i18n/**/documents/**'
+
+# 提示词相关
+prompts:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'i18n/**/prompts/**'
+          - 'libs/external/prompts-library/**'
+
+# 技能相关
+skills:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'i18n/**/skills/**'
+
+# 工具相关
+tools:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'libs/**'
+          - 'backups/**'
+
+# 国际化
+i18n:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'i18n/**'
+
+# CI/CD
+ci:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/**'
+
+# 中文内容
+chinese:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'i18n/zh/**'
