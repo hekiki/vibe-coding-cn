@@ -363,6 +363,7 @@
 
 | Tutorial | Link | Description |
 |:---|:---|:---|
+| Conductor for Gemini CLI | [Google Blog](https://developers.googleblog.com/conductor-introducing-context-driven-development-for-gemini-cli/) | Context-driven development, Gemini CLI extension |
 | Erge's Java Advanced Path | [javabetter.cn](https://javabetter.cn/) | Development tool configuration tutorial |
 | Super Individual Resource List | [x.com/BiteyeCN](https://x.com/BiteyeCN/status/2000856243645157387) | |
 

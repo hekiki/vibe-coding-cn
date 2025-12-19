@@ -63,19 +63,19 @@
   <a href="./documents/01-getting-started/00-Vibe%20Coding%20Philosophy.md"><img src="https://img.shields.io/badge/🧠_Core_Philosophy-Must_Read-crimson?style=for-the-badge" alt="Core Philosophy"></a>
   <a href="./documents/00-fundamentals/Glue%20Coding.md"><img src="https://img.shields.io/badge/🧬_Glue_Coding-Silver_Bullet-red?style=for-the-badge" alt="Glue Coding"></a>
   <a href="./documents/01-getting-started/README.md"><img src="https://img.shields.io/badge/🚀_Getting_Started-Beginners-red?style=for-the-badge" alt="Getting Started"></a>
+  <a href="./documents/00-fundamentals/Language%20Layer%20Elements.md"><img src="https://img.shields.io/badge/📊_Language_Layers-12_Levels-gold?style=for-the-badge" alt="Language Layers"></a>
+  <a href="./documents/00-fundamentals/Common%20Pitfalls.md"><img src="https://img.shields.io/badge/🕳️_Common_Pitfalls-Guide-yellow?style=for-the-badge" alt="Common Pitfalls"></a>
+  <a href="./documents/04-resources/External%20Resource%20Aggregation.md"><img src="https://img.shields.io/badge/📡_Resources-Aggregation-teal?style=for-the-badge" alt="Resource Aggregation"></a>
 </p>
 <!-- 🟠 Methodology (Orange) -->
 <p>
   <a href="./documents/00-fundamentals/A%20Formalization%20of%20Recursive%20Self-Optimizing%20Generative%20Systems.md"><img src="https://img.shields.io/badge/📐_Meta_Methodology-Recursive-darkorange?style=for-the-badge" alt="Meta Methodology"></a>
-  <a href="./documents/00-fundamentals/The%20Way%20of%20Programming.md"><img src="https://img.shields.io/badge/🧭_Dao_Fa_Shu-Methodology-orange?style=for-the-badge" alt="Dao Fa Shu"></a>
+  <a href="./documents/00-fundamentals/The%20Way%20of%20Programming.md"><img src="https://img.shields.io/badge/🧭_Way_of_Programming-Dao_Fa_Shu-orange?style=for-the-badge" alt="Way of Programming"></a>
   <a href="./documents/03-practice/README.md"><img src="https://img.shields.io/badge/🎬_Practice-Projects-orange?style=for-the-badge" alt="Practice Projects"></a>
 </p>
 <!-- 🟡 Practical Tools (Yellow/Green) -->
 <p>
-  <a href="./documents/00-fundamentals/Language%20Layer%20Elements.md"><img src="https://img.shields.io/badge/📊_Language_Layers-12_Levels-gold?style=for-the-badge" alt="Language Layers"></a>
-  <a href="./documents/00-fundamentals/Common%20Pitfalls.md"><img src="https://img.shields.io/badge/🕳️_Common_Pitfalls-Guide-yellow?style=for-the-badge" alt="Common Pitfalls"></a>
   <a href="./documents/04-resources/Tool%20Collection.md"><img src="https://img.shields.io/badge/🛠️_Tools-Quick_Ref-teal?style=for-the-badge" alt="Tools"></a>
-  <a href="./documents/04-resources/External%20Resource%20Aggregation.md"><img src="https://img.shields.io/badge/📡_Resources-Aggregation-teal?style=for-the-badge" alt="Resource Aggregation"></a>
 </p>
 <!-- 🔵 Resource Library (Blue/Purple) -->
 <p>
